@@ -11,6 +11,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="main.js"></script>
+    <script src="JQuery.js"></script>
+    <link rel="stylesheet" type="text/css" href="Nav.css">
+    <link rel="stylesheet" type="text/css" href="Seachbar.css">
+    
+
+  
 </head>
 
 <body>
@@ -33,6 +39,58 @@
             <li><a href="#">Sign Out</a></li>
         </ul>
     </div>
+    
+    <nav1>
+           <!--social-links-and-phone-number----------------->
+    <div class="social-call">
+        <!--social-links--->
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!--phone-number------>
+        <div class="phone">
+            <span>Call: +91</span>
+        </div>
+    </div>
+    <!--menu-bar----------------------------------------->
+    <div class="navigation">
+        <!--logo------------>
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <!--menu-icon------------->
+        <div class="toggle"></div>
+        <!--menu----------------->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li  class="shop"><a href="#" >Shop</a></li>
+            <li><a href="#">Men</a>
+                <!--lable---->
+                <span class="sale-lable">Sale</span>
+            </li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+        </ul>
+        <!--right-menu----------->
+        <div class="right-menu">
+            <a href="javascript:void(0);" class="search">
+                <i class="fas fa-search"></i>
+            </a>
+            <a href="javascript:void(0);" class="user">
+                <i class="far fa-user"></i>
+            </a>
+            <a href="#">
+                <i class="fas fa-shopping-cart">
+                    <span class="num-cart-product">0</span>
+                </i>
+            </a>
+        </div>
+        </div>
+    </nav1>
+       
+          
+          
     <div class="lang">
         <div class="home">
             <a href="#"><b>Returns and Orders</b></a>
@@ -43,32 +101,50 @@
         <div class="cart">
             <a href="#"><b>Home</b></a>
         </div>
+        
+        <!--search-bar----------------------------------->
+    <div class="search-bar">
+    
+        <!--search-input------->
+        <div class="search-input">
+        <input type="text" placeholder="Search For Product" name="search" />
+
+        <!--cancel-btn--->
+        <a href="javascript:void(0);" class="search-cancel">
+            <i class="fas fa-times"></i>
+        </a>
+
+        </div>      
     </div>
-    <img src="logo.">
-    <div class="nav">
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn" ><i class="fas fa-search" id="search"></i></button>
-            <div id="myDropdown" class="dropdown-content">
-            <a href="ex.html" target="_blank">All</a>
-            <a href="#">All categories</a>
-            <a href="#">Deals</a>
-            <a href="#">Watches</a>
-            <a href="#">Electronics</a>
-            <a href="#">Beauty Products</a>
-            <a href="#">Baby</a>
-            <a href="#">Kitchen Appliances</a>
-            <a href="#">Mens Clothes</a>
-            </div>
-        </div>         
+    
     </div>
-    <div class="slide"></div>
-    <div class="empty"></div>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <div class="card">
-        <a href="#">
-            <img src="card12.jpeg" >
-                <p>Product name</p>
-        </a>        
     </div>
+    
+            <!--using JQuery--------------->
+
+
+
+<script
+
+  src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  
+    
+  <script>
+  /*-----For Search Bar-----------------------------*/
+
+    $(document).on('click','.search',function(){
+
+        $('.search-bar').addClass('search-bar-active')
+    });
+ 
+    $(document).on('click','.search-cancel',function(){
+        $('.search-bar').removeClass('search-bar-active')
+    });
+  
+    
+  </script>
+  
+
+   
 </body>
 </html>
