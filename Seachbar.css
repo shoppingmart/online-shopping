@@ -32,7 +32,6 @@ search-bar{
 .search-cancel{
     color: #272727;
     font-size: 2rem;
-    padding-right: 40px;
 }
 .search-bar{
     display: none;
