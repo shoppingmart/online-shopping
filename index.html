@@ -13,10 +13,8 @@
     <script src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="Nav.css">
     <link rel="stylesheet" type="text/css" href="Seachbar.css">
-    <link rel="stylesheet" type="text/css" href="Login form.css"
-    
-
-  
+    <link rel="stylesheet" type="text/css" href="Login form.css"> 
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
@@ -41,20 +39,7 @@
     </div>
     
     <nav1>
-           <!--social-links-and-phone-number----------------->
-    <div class="social-call">
-        <!--social-links--->
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-        <!--phone-number------>
-        <div class="phone">
-            <span>Call: +91</span>
-        </div>
-    </div>
+ 
     <!--menu-bar----------------------------------------->
     <div class="navigation">
         <!--logo------------>
@@ -91,7 +76,7 @@
        
           
           
-    <div class="lang">
+    <!-- <div class="lang">
         <div class="home">
             <a href="#"><b>Returns and Orders</b></a>
         </div>
@@ -100,7 +85,7 @@
         </div>
         <div class="cart">
             <a href="#"><b>Home</b></a>
-        </div>
+        </div> -->
         
         <!--search-bar----------------------------------->
     <div class="search-bar">
@@ -119,7 +104,52 @@
     
     </div>
     </div>
-  
+
+
+<!---------- Wrapper class--------- -->
+        <div class="page-wrapper"></div>
+<!-- -----------Wrapper class -->
+
+
+
+
+
+
+    <!------------------- footer ----------->
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="text-logo"> <span>Go</span><i class="fa fa-shopping-cart"></i>Pro</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit, facere obcaecati ea aspernatur aliquam maiores accusamus. Aspernatur nam omnis inventore, nobis impedit nemo possimus eius ex mollitia, perspiciatis delectus?</p>
+                <div class="contact">
+                    <span><i class="fas fa-phone">&nbsp; &nbsp;+91</i></span>
+                    <span><i class="fas fa-envelope">&nbsp; &nbsp; mail</i></span>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a> 
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links" style="line-height:35px;">
+                <h2>Quuick Links</h2>
+                <a href="index.html">Home</a><br>
+                <a href="#">About</a><br>
+                <a href="#">Contacts</a><br>
+                <a href="#"></a><br>
+                <a href="#">Tearms and Conditions</a>
+            </div>
+          
+        </div>
+
+        <div class="footer-bottom">
+            &copy; companyName | Designed by
+        </div>
+    </div>
+<!-- -------------------//footer -------------->
+
 
   <!---login-and-sign-up--------------------------------->
     <div class="form">
@@ -164,7 +194,7 @@
                 </div>
             </div>
     
-    
+
             <!--using JQuery--------------->
 
 
@@ -198,11 +228,10 @@
     $(document).on('click','.form-cancel',function(){
         $('.form').removeClass('login-active').removeClass('sign-up-active')
     });
-  
-    
   </script>
-  
 
+  
+  
    
 </body>
 </html>
